@@ -105,7 +105,7 @@ public class LinkedList
 
     public void RemoveAll(int _value)
     {
-        while (!Remove(_value));
+        while (Remove(_value));
     }
 
     public void Clear()
@@ -120,7 +120,7 @@ public class LinkedList
         {
             return 0;
         }
-        
+
         int counter = 1;
         Node node = head;
         while (node.next != null)
@@ -134,24 +134,23 @@ public class LinkedList
 
     public void InsertAfter(Node _nodeAfter, Node _nodeToInsert)
     {
+        if (_nodeToInsert == null) return;
+
         if (_nodeAfter == null)
         {
-            if (_nodeToInsert != null)
-            {
-                Node currentHead = head;
-                head = _nodeToInsert;
-                _nodeToInsert.next = currentHead;
-            }
+            Node currentHead = head;
+            head = _nodeToInsert;
+            _nodeToInsert.next = currentHead;
         }
 
-        while (_nodeAfter.next != null)
+        Node nextNode = _nodeAfter.next;
+        if (nextNode == null)
         {
-            
+            _nodeAfter.next = _nodeToInsert;
+            return;
         }
-        
-        // здесь будет ваш код вставки узла после заданного
 
-        // если _nodeAfter = null , 
-        // добавьте новый элемент первым в списке 
+        _nodeAfter.next = _nodeToInsert;
+        _nodeToInsert.next = nextNode;
     }
 }

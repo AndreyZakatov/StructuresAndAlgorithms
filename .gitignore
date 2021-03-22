@@ -1,7 +1,6 @@
-﻿
-/StructuresAndAlgorithms/bin/
+﻿/StructuresAndAlgorithms/bin/Debug/*
 /StructuresAndAlgorithms/obj/
 /StructuresAndAlgorythmsTest/bin/
 /StructuresAndAlgorythmsTest/obj/
-/packages/
-/.idea/
+/packages/*
+.idea/*
