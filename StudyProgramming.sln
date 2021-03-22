@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuresAndAlgorithms", "StructuresAndAlgorithms\StructuresAndAlgorithms.csproj", "{73B5CEA0-C2F6-4DA0-B4A9-B5CA6833507E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StructuresAndAlgorythmsTest", "StructuresAndAlgorythmsTest\StructuresAndAlgorythmsTest.csproj", "{BFD3DE07-E03A-4E9E-B81D-FC1372BA308A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73B5CEA0-C2F6-4DA0-B4A9-B5CA6833507E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73B5CEA0-C2F6-4DA0-B4A9-B5CA6833507E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73B5CEA0-C2F6-4DA0-B4A9-B5CA6833507E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73B5CEA0-C2F6-4DA0-B4A9-B5CA6833507E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFD3DE07-E03A-4E9E-B81D-FC1372BA308A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFD3DE07-E03A-4E9E-B81D-FC1372BA308A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFD3DE07-E03A-4E9E-B81D-FC1372BA308A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFD3DE07-E03A-4E9E-B81D-FC1372BA308A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

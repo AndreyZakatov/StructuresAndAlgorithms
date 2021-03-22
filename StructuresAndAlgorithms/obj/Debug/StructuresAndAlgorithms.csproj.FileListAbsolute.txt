@@ -1,0 +1,6 @@
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorithms\bin\Debug\StructuresAndAlgorithms.dll
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorithms\bin\Debug\StructuresAndAlgorithms.pdb
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorithms\obj\Debug\StructuresAndAlgorithms.csprojAssemblyReference.cache
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorithms\obj\Debug\StructuresAndAlgorithms.csproj.CoreCompileInputs.cache
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorithms\obj\Debug\StructuresAndAlgorithms.dll
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorithms\obj\Debug\StructuresAndAlgorithms.pdb

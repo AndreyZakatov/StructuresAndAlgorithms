@@ -1,0 +1,11 @@
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorythmsTest\bin\Debug\StructuresAndAlgorythmsTest.dll
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorythmsTest\bin\Debug\StructuresAndAlgorythmsTest.pdb
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorythmsTest\bin\Debug\nunit.framework.dll
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorythmsTest\bin\Debug\StructuresAndAlgorithms.dll
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorythmsTest\bin\Debug\StructuresAndAlgorithms.pdb
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorythmsTest\bin\Debug\nunit.framework.xml
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorythmsTest\obj\Debug\StructuresAndAlgorythmsTest.csprojAssemblyReference.cache
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorythmsTest\obj\Debug\StructuresAndAlgorythmsTest.csproj.CoreCompileInputs.cache
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorythmsTest\obj\Debug\StructuresAndAlgorythmsTest.csproj.CopyComplete
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorythmsTest\obj\Debug\StructuresAndAlgorythmsTest.dll
+C:\Users\andre\RiderProjects\StudyProgramming\StructuresAndAlgorythmsTest\obj\Debug\StructuresAndAlgorythmsTest.pdb
