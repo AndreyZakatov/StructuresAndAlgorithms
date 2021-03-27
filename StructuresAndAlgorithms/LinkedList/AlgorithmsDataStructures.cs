@@ -1,156 +1,159 @@
 ﻿using System;
 using System.Collections.Generic;
 
-public class Node
+namespace AlgorithmsDataStructures
 {
-    public int value;
-    public Node next;
-
-    public Node(int _value)
+    public class Node
     {
-        value = _value;
-    }
-}
+        public int value;
+        public Node next;
 
-public class LinkedList
-{
-    public Node head;
-    public Node tail;
-
-    public LinkedList()
-    {
-        head = null;
-        tail = null;
-    }
-
-    public void AddInTail(Node _item)
-    {
-        if (head == null) head = _item;
-        else tail.next = _item;
-        tail = _item;
-    }
-
-    public Node Find(int _value)
-    {
-        Node node = head;
-        while (node != null)
+        public Node(int _value)
         {
-            if (node.value == _value) return node;
-            node = node.next;
+            value = _value;
+        }
+    }
+
+    public class LinkedList
+    {
+        public Node head;
+        public Node tail;
+
+        public LinkedList()
+        {
+            head = null;
+            tail = null;
         }
 
-        return null;
-    }
-
-    public List<Node> FindAll(int _value)
-    {
-        List<Node> nodes = new List<Node>();
-        Node node = head;
-        while (node != null)
+        public void AddInTail(Node _item)
         {
-            if (node.value == _value)
+            if (head == null) head = _item;
+            else tail.next = _item;
+            tail = _item;
+        }
+
+        public Node Find(int _value)
+        {
+            Node node = head;
+            while (node != null)
             {
-                nodes.Add(node);
+                if (node.value == _value) return node;
+                node = node.next;
             }
 
-            node = node.next;
+            return null;
         }
 
-        return nodes;
-    }
-
-    public bool Remove(int _value)
-    {
-        Node node = head;
-        Node previousNode = null;
-
-        while (node != null)
+        public List<Node> FindAll(int _value)
         {
-            if (node.value == _value)
+            List<Node> nodes = new List<Node>();
+            Node node = head;
+            while (node != null)
             {
-                if (node.next != null)
+                if (node.value == _value)
                 {
-                    if (previousNode == null)
+                    nodes.Add(node);
+                }
+
+                node = node.next;
+            }
+
+            return nodes;
+        }
+
+        public bool Remove(int _value)
+        {
+            Node node = head;
+            Node previousNode = null;
+
+            while (node != null)
+            {
+                if (node.value == _value)
+                {
+                    if (node.next != null)
                     {
-                        head = node.next;
+                        if (previousNode == null)
+                        {
+                            head = node.next;
+                        }
+                        else
+                        {
+                            previousNode.next = node.next;
+                        }
                     }
                     else
                     {
-                        previousNode.next = node.next;
+                        if (previousNode == null)
+                        {
+                            head = null;
+                            tail = null;
+                        }
+                        else
+                        {
+                            tail = previousNode;
+                            previousNode.next = null;
+                        }
                     }
-                }
-                else
-                {
-                    if (previousNode == null)
-                    {
-                        head = null;
-                        tail = null;
-                    }
-                    else
-                    {
-                        tail = previousNode;
-                        previousNode.next = null;
-                    }
+
+                    return true;
                 }
 
-                return true;
+                previousNode = node;
+                node = node.next;
             }
 
-            previousNode = node;
-            node = node.next;
+            return false;
         }
 
-        return false;
-    }
-
-    public void RemoveAll(int _value)
-    {
-        while (Remove(_value));
-    }
-
-    public void Clear()
-    {
-        head = null;
-        tail = null;
-    }
-
-    public int Count()
-    {
-        if (head == null)
+        public void RemoveAll(int _value)
         {
-            return 0;
+            while (Remove(_value)) ;
         }
 
-        int counter = 1;
-        Node node = head;
-        while (node.next != null)
+        public void Clear()
         {
-            counter += 1;
-            node = node.next;
+            head = null;
+            tail = null;
         }
 
-        return counter;
-    }
-
-    public void InsertAfter(Node _nodeAfter, Node _nodeToInsert)
-    {
-        if (_nodeToInsert == null) return;
-
-        if (_nodeAfter == null)
+        public int Count()
         {
-            Node currentHead = head;
-            head = _nodeToInsert;
-            _nodeToInsert.next = currentHead;
+            if (head == null)
+            {
+                return 0;
+            }
+
+            int counter = 1;
+            Node node = head;
+            while (node.next != null)
+            {
+                counter += 1;
+                node = node.next;
+            }
+
+            return counter;
         }
 
-        Node nextNode = _nodeAfter.next;
-        if (nextNode == null)
+        public void InsertAfter(Node _nodeAfter, Node _nodeToInsert)
         {
+            if (_nodeToInsert == null) return;
+
+            if (_nodeAfter == null)
+            {
+                Node currentHead = head;
+                head = _nodeToInsert;
+                _nodeToInsert.next = currentHead;
+            }
+
+            Node nextNode = _nodeAfter.next;
+            if (nextNode == null)
+            {
+                _nodeAfter.next = _nodeToInsert;
+                return;
+            }
+
             _nodeAfter.next = _nodeToInsert;
-            return;
+            _nodeToInsert.next = nextNode;
         }
-
-        _nodeAfter.next = _nodeToInsert;
-        _nodeToInsert.next = nextNode;
     }
 }

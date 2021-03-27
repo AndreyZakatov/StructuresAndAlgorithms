@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using AlgorithmsDataStructures;
 using NUnit.Framework;
 
 namespace StructuresAndAlgorythmsTest
@@ -114,6 +115,7 @@ namespace StructuresAndAlgorythmsTest
         
         
         [Test]
+        [Theory]
         public void InsertAfter_FindTest_ReturnTrue()
         {
             Node node = _list.Find(6);
