@@ -126,6 +126,54 @@ namespace StructuresAndAlgorythmsTest
             Assert.IsTrue(testNode.next == nodeToPaste);
         }
         
+        [Test]
+        [Theory]
+        public void InsertAfter_EmptyList_ReturnTrue()
+        {
+            LinkedList list = new LinkedList();
+            Node node = new Node(6);
+            list.InsertAfter(null, node);
+            
+            Assert.IsTrue(list.head == list.tail && list.head == node);
+            
+        }
+        
+        [Test]
+        [Theory]
+        public void InsertAfter_DoubleAdd_ReturnTrue()
+        {
+            LinkedList list = new LinkedList();
+            Node node = new Node(6);
+            Node node2 = new Node(7);
+            
+            
+            
+            list.InsertAfter(null, node);
+            list.InsertAfter(node, node2);
+            
+            
+            Assert.IsTrue(list.tail == node2 && list.head == node);
+            
+        }
+        
+        [Test]
+        [Theory]
+        public void InsertAfter_TripleAdd_ReturnTrue()
+        {
+            LinkedList list = new LinkedList();
+            Node node = new Node(6);
+            Node node2 = new Node(7);
+            Node node3 = new Node(8);
+            
+            
+            list.InsertAfter(null, node);
+            list.InsertAfter(node, node2);
+            list.InsertAfter(node2, node3);
+            
+            Assert.IsTrue(list.tail == node3 && list.head == node);
+            
+        }
+        
         
     }
 

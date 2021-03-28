@@ -140,20 +140,31 @@ namespace AlgorithmsDataStructures
 
             if (_nodeAfter == null)
             {
-                Node currentHead = head;
-                head = _nodeToInsert;
-                _nodeToInsert.next = currentHead;
+                if (head == null && tail == null)
+                {
+                    head = _nodeToInsert;
+                    tail = _nodeToInsert;
+                }
+                else
+                {
+                    Node currentHead = head;
+                    head = _nodeToInsert;
+                    _nodeToInsert.next = currentHead;
+                }
             }
-
-            Node nextNode = _nodeAfter.next;
-            if (nextNode == null)
+            else
             {
-                _nodeAfter.next = _nodeToInsert;
-                return;
-            }
+                Node nextNode = _nodeAfter.next;
+                if (nextNode == null)
+                {
+                    _nodeAfter.next = _nodeToInsert;
+                    tail = _nodeToInsert;
+                    return;
+                }
 
-            _nodeAfter.next = _nodeToInsert;
-            _nodeToInsert.next = nextNode;
+                _nodeAfter.next = _nodeToInsert;
+                _nodeToInsert.next = nextNode; 
+            }
         }
     }
 }
